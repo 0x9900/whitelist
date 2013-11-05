@@ -4,6 +4,8 @@ whitelist
 Generate a list of ipaddresses based off the SPF records of domain names.
 This whitelist is intended for `spamdb` and `pf`.
 
+Check spamd config file [spamd.conf](http://www.openbsd.org/cgi-bin/man.cgi?query=spamd.conf&sektion=5&arch=i386&apropos=0&manpath=OpenBSD+Current)
+
 whitelist.py can generate a list of ip addresses for a domain name
 ```
 fred$ ./whitelist.py -d google.com
