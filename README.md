@@ -2,7 +2,7 @@ whitelist
 =========
 
 Generate a list of ipaddresses based off the SPF records of domain names.
-This whitelist is intended for spamdb and pf
+This whitelist is intended for `spamdb` and `pf`.
 
 whitelist.py can generate a list of ip addresses for a domain name
 ```
