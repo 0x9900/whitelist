@@ -4,14 +4,16 @@
 # Email:
 #
 from __future__ import print_function
+
+import DNS
+import re
+import sys
+
 from collections import defaultdict
 
 USAGE = """
 whitelist.py [-d domain.tld | -f domain_list.txt]
 """
-import sys
-import DNS
-import re
 
 RE_PARSE = re.compile(r'(ip4|ip6|include|redirect)[:=](.*)', re.IGNORECASE)
 MAX_RECURSION = 5
