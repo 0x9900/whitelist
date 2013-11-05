@@ -18,4 +18,6 @@ or for a list of domain names.
 fred$ ./bin/whitelist -f domains.txt
 106.50.16.0/28
 107.20.52.15
+. . .
+96.46.150.192/27
 ```
