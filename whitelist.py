@@ -21,8 +21,8 @@ MAX_RECURSION = 5
 def dns_txt(domain):
   try:
     resp = DNS.dnslookup(domain, 'TXT')
-  except DNS.ServerError as err:
-    print(err, file=sys.stderr)
+  except (DNS.ServerError, DNS.Base.TimeoutError) as err:
+    print("{}: {}".format(domain, err.message), file=sys.stderr)
     return None
 
   response = []
